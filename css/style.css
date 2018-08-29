@@ -1,0 +1,112 @@
+body{
+    background-color: #f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+#main-header{
+    background-color: gray;
+
+}
+#navbar{
+    background-color: #333;
+    color:#fff;
+}
+#navbar ul{
+    padding:0;
+    list-style: none;
+}
+#navbar li{
+    display: inline;
+}
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+#showcase{
+    background-image: url('../images/showcase2.jpg');
+    background-position: center center;
+    min-height: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#showcase h1{
+    color:#fff;
+    font-size: 50px;
+    line-height: 1.0em;
+    padding-top:30px;
+}
+#main{
+    float:left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float:right;
+    background: #333;
+    color:#fff;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main-footer{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.floating-button{
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+}
+
+#fixed-github{
+    position:fixed;
+    top:250px;
+    background-image: url('../images/github.png');
+}
+#fixed-linkedin{
+    position:fixed;
+    top:300px;
+    background-image: url('../images/linkedin.png');
+}
+#fixed-facebook{
+    position:fixed;
+    top:350px;
+    background-image: url('../images/facebook.png');
+}
+#fixed-email{
+    position:fixed;
+    top:400px;
+    background-image: url('../images/gmail.png');
+}
+#fixed-instagram{
+    position:fixed;
+    top:450px;
+    background-image: url('../images/instagram3.png');
+}
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
