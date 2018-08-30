@@ -2,9 +2,12 @@ body{
     background-color: #f4f4f4;
     color:#555;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6em;
     margin: 0;
+}
+#title{
+    color: white;
 }
 a{
     color: white;    
@@ -17,10 +20,8 @@ a:hover{
     margin:auto;
     overflow:hidden;
 }
-
 #main-header{
     background-color: gray;
-
 }
 #navbar{
     background-color: #333;
@@ -31,26 +32,40 @@ a:hover{
     list-style: none;
 }
 #navbar li{
-    display: inline;
+    display: inline-block;
+    text-align: center;
+    background-color: #555;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#navbar li:hover{
+    background-color:lightslategray;
 }
 #navbar a{
     color:#fff;
     text-decoration: none;
-    font-size: 18px;
-    padding-right: 15px;
+    font-size: 20px;
+    padding: 10px;
 }
 #showcase{
-    background-image: url('../images/showcase2.jpg');
+    background-image: url('../images/showcase.jpg');
+    opacity: 0.8;
     background-position: center center;
     min-height: 300px;
     margin-bottom: 30px;
     text-align: center;
 }
+#a-projects{
+    color:midnightblue;
+}
+#a-projects:hover{
+    color:red;
+}
 #showcase h1{
-    color:#fff;
-    font-size: 50px;
+    color:white;
+    font-size: 60px;
     line-height: 1.0em;
-    padding-top:30px;
+    padding-top:20px;
 }
 .main{
     float:left;
@@ -69,6 +84,19 @@ a:hover{
     width: 640px;
     height: 360px;
 }
+.main-project-image{
+    width: 30%;
+    float: left;
+}
+.main-project-text{
+    width: 70%;
+    float: right;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+#main-projects{
+    margin-top: 20px;
+}
 .sidebar{
     float:right;
     background: #333;
@@ -79,13 +107,20 @@ a:hover{
 }
 #sidebar-SQLGenerator{
     margin-top: 110px;
-    border-left: 8px red solid;
-    border-bottom: 4px red solid;
+    background-color: lightgray;
+    color: #555;
+    font-weight: bold;
+    border-left: 8px midnightblue solid;
+    border-bottom: 4px midnightblue solid;
 }
 #sidebar-other{
     margin-top: 30px;
-    border-left: 8px red solid;
-    border-bottom: 4px red solid;
+    background-color: lightgray;
+    color: #555;
+    font-weight: bold;
+    border-left: 8px midnightblue solid;
+    border-bottom: 4px midnightblue solid;
+    
 }
 #main-footer{
     background: #333;
@@ -99,31 +134,29 @@ a:hover{
     margin: 0;
     width: 50px;
     height: 50px;
+    display: block;
 }
-
+.fixed-social-media{
+    margin:0;
+    padding: 0;
+    position: fixed;
+    top:40%;
+    width: 50px;
+    height: 250px;
+}
 #fixed-github{
-    position:fixed;
-    top:250px;
     background-image: url('../images/github.png');
 }
 #fixed-linkedin{
-    position:fixed;
-    top:300px;
     background-image: url('../images/linkedin.png');
 }
 #fixed-facebook{
-    position:fixed;
-    top:350px;
     background-image: url('../images/facebook.png');
 }
 #fixed-email{
-    position:fixed;
-    top:400px;
     background-image: url('../images/gmail.png');
 }
 #fixed-instagram{
-    position:fixed;
-    top:450px;
     background-image: url('../images/instagram3.png');
 }
 @media(max-width:600px){
@@ -134,5 +167,15 @@ a:hover{
     #sidebar{
         width: 100%;
         float: none;
+    }
+    .main-project-image{
+        width: 100%;
+        float: none;
+    }
+    .main-project-text{
+        width: 100%;
+        float: none;
+        box-sizing: border-box;
+        padding-left: 0;
     }
 }
