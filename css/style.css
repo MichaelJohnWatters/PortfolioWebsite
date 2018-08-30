@@ -6,7 +6,12 @@ body{
     line-height: 1.6em;
     margin: 0;
 }
-
+a{
+    color: white;    
+}
+a:hover{
+    color:red;
+}
 .container{
     width: 80%;
     margin:auto;
@@ -47,19 +52,40 @@ body{
     line-height: 1.0em;
     padding-top:30px;
 }
-#main{
+.main{
     float:left;
-    width: 70%;
+    width: 100%;
     padding: 0 30px;
     box-sizing: border-box;
 }
-#sidebar{
+.main-sidebar{
+    float:left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box; 
+}
+.main-image-left{
+    position: relative;
+    width: 640px;
+    height: 360px;
+}
+.sidebar{
     float:right;
     background: #333;
     color:#fff;
     width: 30%;
-    padding: 10px;
+    padding: 5px 5px 5px 5px;
     box-sizing: border-box;
+}
+#sidebar-SQLGenerator{
+    margin-top: 110px;
+    border-left: 8px red solid;
+    border-bottom: 4px red solid;
+}
+#sidebar-other{
+    margin-top: 30px;
+    border-left: 8px red solid;
+    border-bottom: 4px red solid;
 }
 #main-footer{
     background: #333;
