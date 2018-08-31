@@ -120,7 +120,6 @@ a:hover{
     font-weight: bold;
     border-left: 8px midnightblue solid;
     border-bottom: 4px midnightblue solid;
-    
 }
 #main-footer{
     background: #333;
@@ -157,9 +156,10 @@ a:hover{
     background-image: url('../images/gmail.png');
 }
 #fixed-instagram{
-    background-image: url('../images/instagram3.png');
+    background-image: url('../images/instagram.png');
 }
-@media(max-width:600px){
+
+@media(max-width:900px){
     #main{
         width: 100%;
         float: none;
@@ -177,5 +177,23 @@ a:hover{
         float: none;
         box-sizing: border-box;
         padding-left: 0;
+    }
+}
+@media(max-width: 600px){
+    body{
+        font-size: 14px;
+    }
+}
+@media(max-width: 700px){
+    .sidebar{
+        float:left;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #sidebar-SQLGenerator{
+        margin-top: 30px;
+    }
+    #showcase h1{
+        font-size: 40px;
     }
 }
