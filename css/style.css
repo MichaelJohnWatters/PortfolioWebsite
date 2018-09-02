@@ -10,6 +10,9 @@ body{
     color: white;
     font-family: 'Patua One', cursive;
 }
+#container-title{
+    font-size: xx-large;
+}
 a{
     color: white;    
 }
@@ -22,15 +25,17 @@ a:hover{
     overflow:hidden;
 }
 #main-header{
-    padding-top: 10px;
     background-color: gray;
 }
 #main-header h1{
-    display: inline;
+    display: block;
 }
 #navbar{
     background-color: #333;
     color:#fff;
+}
+#navbar-hosted{
+    display: inline;
 }
 #navbar ul{
     padding:0;
@@ -52,6 +57,7 @@ a:hover{
     font-size: 20px;
     padding: 10px;
 }
+
 #showcase{
     background-image: url('../images/showcase.jpg');
     opacity: 0.8;
@@ -72,43 +78,6 @@ a:hover{
     line-height: 1.0em;
     padding-top:20px;
     font-family: 'Patua One', cursive;
-}
-.roundborders {
-	border-radius: 5px;
-}
-.languagepicker {
-    background-color: #333;
-	display: inline-block;
-	padding: 0;
-	height: 40px;
-	overflow: hidden;
-	transition: all .3s ease;
-	margin: 0 50px 10px 0;
-	vertical-align: top;
-	float: right;
-}
-.languagepicker:hover {
-	height: 81px;
-}
-.languagepicker a{
-    color:white;
-	text-decoration: none;
-}
-.languagepicker li {
-	display: block;
-	padding: 0px 20px;
-	line-height: 40px;
-	border-top: 1px solid black;
-}
-.languagepicker li:hover{
-	background-color: lightslategray;
-}
-.languagepicker a:first-child li {
-	border: none;
-	background:#333 !important;
-}
-.languagepicker li img {
-	margin-right: 5px;
 }
 .main{
     float:left;
@@ -214,6 +183,10 @@ a:hover{
         width: 100%;
         float: none;
     }
+    .main-sidebar{
+        width: 100%;
+        float: none;
+    }
     #sidebar{
         width: 100%;
         float: none;
@@ -239,12 +212,10 @@ a:hover{
         margin-top: 30px;
     }
 }
-@media(max-width: 600px){
+@media(max-width: 700px){
     body{
         font-size: 14px;
     }
-}
-@media(max-width: 700px){
     .sidebar{
         float:left;
         width: 100%;
@@ -257,9 +228,13 @@ a:hover{
         font-size: 40px;
     }
 }
-@media(max-width: 400px){
+@media(max-width: 500px){
     #navbar li{
         display: block;
         margin-top: 5px;
+    }
+    #navbar h5{
+        float: none;
+        text-align: center;
     }
 }
