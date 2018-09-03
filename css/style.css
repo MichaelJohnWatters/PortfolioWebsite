@@ -57,10 +57,9 @@ a:hover{
     font-size: 20px;
     padding: 10px;
 }
-
 #showcase{
     background-image: url('../images/showcase.jpg');
-    opacity: 0.8;
+    opacity: 1;
     background-position: center center;
     min-height: 300px;
     margin-bottom: 30px;
@@ -91,11 +90,6 @@ a:hover{
     padding: 0 30px;
     box-sizing: border-box; 
 }
-.main-image-left{
-    width: 640px;
-    height: 360px;
-    display:block;
-}
 .main-project-image{
     width: 30%;
     float: left;
@@ -116,13 +110,16 @@ a:hover{
     width: 30%;
     padding: 5px 5px 5px 5px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 .sidebar-SQL{
     float:right;
-    background: #333;
-    color:#fff;
     width: 30%;
     padding: 5px 5px 5px 5px;
+    box-sizing: border-box;
+}
+#generator-img{
+    max-width: 100%;
     box-sizing: border-box;
 }
 #sidebar-SQLGenerator{
@@ -178,6 +175,22 @@ a:hover{
 #fixed-instagram{
     background-image: url('../images/instagram.png');
 }
+#download-cv{
+    margin: auto;
+    margin-bottom: 40px;
+    text-align:center;
+}
+#download-cv img{
+    height: 60px;
+    width: 60px;
+}
+#download-cv a{
+    color: blue !important;
+    font-size: 30px;
+}
+#download-cv a:hover{
+    color: red !important;
+}
 @media(max-width:900px){
     #main{
         width: 100%;
@@ -187,9 +200,10 @@ a:hover{
         width: 100%;
         float: none;
     }
-    #sidebar{
+    .sidebar{
+        float:left;
         width: 100%;
-        float: none;
+        box-sizing: border-box;
     }
     .main-project-image{
         width: 100%;
@@ -211,6 +225,7 @@ a:hover{
     #sidebar-SQLGenerator{
         margin-top: 30px;
     }
+    
 }
 @media(max-width: 700px){
     body{
@@ -231,7 +246,10 @@ a:hover{
 @media(max-width: 500px){
     #navbar li{
         display: block;
+        padding: 30px 5px 5px 5px;
+        height: 50px;
         margin-top: 5px;
+        margin-right:0;
     }
     #navbar h5{
         float: none;
