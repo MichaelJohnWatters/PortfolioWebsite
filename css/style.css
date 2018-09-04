@@ -251,8 +251,14 @@ a:hover{
         margin-top: 5px;
         margin-right:0;
     }
+    #navbar a{
+        padding : 50px 90px 50px 90px;
+    }
     #navbar h5{
         float: none;
         text-align: center;
+    }
+    #title{
+        font-size: 12px;
     }
 }
